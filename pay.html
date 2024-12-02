@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Gateway</title>
+    <link rel="stylesheet" href="pay2.css">
+
+</head>
+
+<body>
+    <div class="pay-container">
+        <h1>Choose Your Way to Pay</h1>
+        <div class="pay-options">
+            <div class="option" id="creditcard">
+                <img src="https://www.rupay.co.in/images/rupay/Axis-Fibe-Axis-RuPay-Credit-Card.png" alt="cc" width="120px" height="auto">
+                <h3>Credit Card</h3>
+            </div>
+            <div class="option" id="debitcard">
+                <img src="https://www.visasoutheasteurope.com/dam/VCOM/regional/cemea/generic-cemea/pay-with-visa/find-a-card/visa-classic-new-800x450.png"
+                alt="db" width="120px" height="auto">
+                <h3>Debit Card</h3>
+            </div>
+            <div class="option" id="upi">
+                <img src="https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fexb2bvgjlfysy5dkya2u.jpeg"
+                alt="upi" width="100px" height="auto">
+                <h3>UPI</h3>
+            </div>
+            <div class="option" id="wallet">
+                <img src="https://st3.depositphotos.com/1915171/35550/v/450/depositphotos_355507160-stock-illustration-cash-money-sign-wallet-credit.jpg"
+                alt="wallet" width="100px" height="auto">
+                <h3>Wallet</h3>
+            </div>
+        </div>
+        <form class="payform">
+            <div class="ip-grp">
+                <label for="name">Payer Name : </label>
+                <input type="text" id="name" placeholder="Enter Payer Name" required>
+            </div>
+            <div class="ip-grp">
+                <label for="cardno">Card Number : </label>
+                <input type="text" id="cardno" placeholder="Enter Card Number" required>
+            </div>
+            <div class="ip-grp-grp">
+                <div class="ip-grp">
+                    <label for="expiry">Expiry Month : </label>
+                    <input type="month" id="expiry" required>
+                </div>
+                <div class="ip-grp">
+                    <label for="cvv">CVV : </label>
+                    <input type="password" id="cvv"  placeholder="Enter a valid 3-digit CVV" maxlength="3" pattern="\d{3}" required>
+                </div>
+                <input type="checkbox" required > I agree to the terms and conditions
+                <br>
+                <button type="submit">Proceed to Pay</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
